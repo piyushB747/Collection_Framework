@@ -8,8 +8,8 @@ public class DuplicateElement {
 		Map<Integer,Integer> l_objMap = new HashMap<Integer,Integer>();
 		for(int i=0;i<arr.length;i++) {
 			if(l_objMap.containsKey(arr[i])) {
-				 int key = l_objMap.get(arr[i]);
-				 l_objMap.put(arr[i], key+1);
+				 int value = l_objMap.get(arr[i]);
+				 l_objMap.put(arr[i], value+1);
 			}else {
 				l_objMap.put(arr[i],1);
 			}
